@@ -162,6 +162,7 @@
             <div class="institution-logos"
               style="margin-top: 1.5rem; display: flex; justify-content: center; align-items: center; gap: 30px;">
               <img src="./static/images/logo-teleai.png" alt="TeleAI" style="height: 120px;">
+              <img src="./static/images/logo-fdu.png" alt="FDU" style="height: 120px;">
               <img src="./static/images/logo-sjtu.png" alt="SJTU" style="height: 120px;">
               <img src="./static/images/logo-ecust.png" alt="ECUST" style="height: 120px;">
             </div>
@@ -237,30 +238,29 @@
         <div class="column is-four-fifths">
           <div class="content has-text-justified">
             <p>
-              Recent advances in humanoid whole-body motion tracking have enabled the execution of diverse and highly
-              coordinated motions on real hardware. However, existing controllers are commonly driven either by
-              predefined motion trajectories, which offer limited flexibility when user intent changes, or by continuous
-              human teleoperation, which requires constant human involvement and limits autonomy. This work addresses
-              the problem of how to drive a universal humanoid controller in a real-time and interactive manner. We
-              present TextOp, a real-time text-driven humanoid motion generation and control framework that supports
-              streaming language commands and on-the-fly instruction modification during execution. TextOp adopts a
-              two-level architecture in which a high-level autoregressive motion diffusion model continuously generates
-              short-horizon kinematic trajectories conditioned on the current text input, while a low-level motion
-              tracking policy executes these trajectories on a physical humanoid robot. By bridging interactive motion
-              generation with robust whole-body control, TextOp unlocks free-form intent expression and enables smooth
-              transitions across multiple challenging behaviors such as dancing and jumping, within a single continuous
-              motion execution. Extensive real-robot experiments and offline evaluations demonstrate instant
-              responsiveness, smooth whole-body motion, and precise control. The project page and the open-source code
-              are available at https://text-op.github.io/ .
+              Recent progress in robot manipulation has been largely driven by learning from large-scale
+              demonstrations. For humanoid robot loco-manipulation tasks, however, existing data sources force an
+              unsatisfying tradeoff between trajectory quality and scalability. Real-world teleoperation provides the
+              highest-quality trajectories but requires dedicated physical space and time-consuming scene resets.
+              Simulation offers an alternative way out of this dilemma: it can produce clean, embodiment-aligned data at
+              scale without any physical hardware. In this paper, we propose OASIS, a simulation-data-driven framework
+              for humanoid loco-manipulation. OASIS automatically reconstructs realistic object assets from real-world
+              images using a 3D generative model. Based on these assets, trajectories are first collected through
+              teleoperation in simulation, and then augmented under diverse domain randomizations in a post-processing
+              stage. With the resulting simulation data, we further design a hierarchical visuomotor policy for humanoid
+              loco-manipulation. Extensive experiments on the real humanoid robot show that, under zero-shot deployment,
+              the policy trained on our simulation data achieves higher success rates on most tasks than that trained on
+              real-robot teleoperation data, owing largely to the broad lighting and environmental variations covered by
+              our simulation rendering, which real-robot data fails to capture.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Teaser Image -->
+      <!-- Cover Image -->
       <div class="columns is-centered has-text-centered" style="margin-top: 2rem;">
         <div class="column is-full-width">
-          <img src="./static/images/cover.png" alt="Teaser Image"
+          <img src="./static/images/cover.jpg" alt="Cover Image"
             style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
         </div>
       </div>
