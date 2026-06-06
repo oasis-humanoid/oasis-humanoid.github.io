@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TextOp</title>
+  <title>OASIS</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -120,26 +120,25 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">
-              TextOp: Real-time Interactive Text-Driven Humanoid Robot Motion Generation and Control
+              OASIS: From Simulation Data Collection to Real-World Humanoid Loco-Manipulation
             </h1>
 
 
             <div class="author-block-container is-size-5">
               <div class="publication-authors">
                 <span class="author-block">
-                  <a href="https://shi-soul.github.io/">Weiji Xie</a><sup>1,2*</sup>,</span>
+                  <a href="#">Zehao Yu</a><sup>1,2</sup>,</span>
                 <span class="author-block">
-                  <a href="#">Jiakun Zheng</a><sup>1,3*</sup>,</span>
+                  <a href="#">Jiakun Zheng</a><sup>1,3</sup>,</span>
                 <span class="author-block">
-                  <a href="http://bwrooney82.github.io/">Jinrui
-                    Han</a><sup>1,2</sup>,</span>
+                  <a href="https://shi-soul.github.io/">Weiji Xie</a><sup>1,4</sup>,</span>
                 <span class="author-block">
                   <a href="https://scholar.google.com/citations?user=aVte5j4AAAAJ">Jiyuan Shi</a><sup>1</sup>
+                <span class="author-block">
+                  <a href="#">Chenyun Zhang</a><sup>1</sup>,</span>
                 </span>
               </div>
               <div class="publication-authors">
-                <span class="author-block">
-                  <a href="https://wnzhang.net">Weinan Zhang</a><sup>2&dagger;</sup>,</span>
                 <span class="author-block">
                   <a href="https://baichenjia.github.io/">Chenjia Bai</a><sup>1&dagger;</sup>,</span>
                 <span class="author-block">
@@ -150,12 +149,12 @@
               <div class="affiliation-block">
                 <span class="author-block"><sup>1</sup>Institute of Artificial Intelligence (TeleAI), China
                   Telecom</span><br>
-                <span class="author-block"><sup>2</sup>Shanghai Jiao Tong University</span>
+                <span class="author-block"><sup>2</sup>Fudan University</span>
                 <span class="author-block"><sup>3</sup>East China University of Science and Technology</span>
+                <span class="author-block"><sup>4</sup>Shanghai Jiao Tong University</span>
               </div>
 
               <div class="contribution-block">
-                <span class="author-block"><sup>*</sup>Equal contribution</span>
                 <span class="author-block"><sup>&dagger;</sup>Corresponding author</span>
               </div>
             </div>
@@ -261,7 +260,7 @@
       <!-- Teaser Image -->
       <div class="columns is-centered has-text-centered" style="margin-top: 2rem;">
         <div class="column is-full-width">
-          <img src="./static/images/teaser-v2.png" alt="Teaser Image"
+          <img src="./static/images/cover.png" alt="Teaser Image"
             style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
         </div>
       </div>
@@ -274,8 +273,80 @@
       <h2 class="title is-3 has-text-centered">Method</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-          <img src="./static/images/method-v4.png" alt="Method Image"
+          <img src="./static/images/method.png" alt="Method Image"
             style="width: 100%; border-radius: 10px; margin-top: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simulation Assets Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2 has-text-centered">Simulation Assets</h2>
+      <div class="grid-skills">
+        <div class="video-item">
+          <video muted loop autoplay playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="static/videos/asset/monitor.mp4" type="video/mp4">
+          </video>
+          <div class="caption">Monitor</div>
+        </div>
+        <div class="video-item">
+          <video muted loop autoplay playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="static/videos/asset/cup.mp4" type="video/mp4">
+          </video>
+          <div class="caption">Cup</div>
+        </div>
+        <div class="video-item">
+          <video muted loop autoplay playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="static/videos/asset/box.mp4" type="video/mp4">
+          </video>
+          <div class="caption">Box</div>
+        </div>
+        <div class="video-item">
+          <video muted loop autoplay playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="static/videos/asset/basket.mp4" type="video/mp4">
+          </video>
+          <div class="caption">Basket</div>
+        </div>
+        <div class="video-item">
+          <video muted loop autoplay playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="static/videos/asset/sponge.mp4" type="video/mp4">
+          </video>
+          <div class="caption">Sponge</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teleoperation Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2 has-text-centered">Teleoperation</h2>
+      <div class="grid-robustness">
+        <div class="video-item">
+          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="static/videos/teleop/put_cup_in_box.mp4" type="video/mp4">
+          </video>
+          <div class="caption">Place Cup in Box</div>
+        </div>
+        <div class="video-item">
+          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="static/videos/teleop/wipe_monitor.mp4" type="video/mp4">
+          </video>
+          <div class="caption">Wipe Monitor</div>
+        </div>
+        <div class="video-item">
+          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="static/videos/teleop/pick_basket.mp4" type="video/mp4">
+          </video>
+          <div class="caption">Lift Basket and Place Cup</div>
+        </div>
+        <div class="video-item">
+          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="static/videos/teleop/wipe_under_table.mp4" type="video/mp4">
+          </video>
+          <div class="caption">Kneel and Wipe Under Table</div>
         </div>
       </div>
     </div>
@@ -285,106 +356,30 @@
   <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-2 has-text-centered">Real Robot Experiments</h2>
-
-      <!-- One-Take Demo -->
-      <h3 class="title is-3">One-Take Demonstration</h3>
-      <div class="columns is-centered">
-        <div class="column is-four-fifths">
-          <div class="video-item">
-            <video muted loop playsinline controls preload="metadata"
-              style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-              <source src="static/videos/demo_big.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <!-- <div class="caption">One-Take Full Demonstration</div> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Skill Demos (9) -->
-      <h3 class="title is-3" style="margin-top: 4rem;">Multi Skill Demonstration</h3>
-      <div class="grid-skills">
-        <!-- Row 1 -->
-        <div class="video-item">
-          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/skill_daily.mp4" type="video/mp4">
-          </video>
-          <div class="caption">Daily Life</div>
-        </div>
-        <div class="video-item">
-          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/skill_dance.mp4" type="video/mp4">
-          </video>
-          <div class="caption">Dancing</div>
-        </div>
-        <div class="video-item">
-          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/skill_gesture.mp4" type="video/mp4">
-          </video>
-          <div class="caption">Gestures</div>
-        </div>
-        <!-- Row 2 -->
-        <div class="video-item">
-          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/skill_instrument.mp4" type="video/mp4">
-          </video>
-          <div class="caption">Musical Instruments</div>
-        </div>
-        <div class="video-item">
-          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/skill_jump.mp4" type="video/mp4">
-          </video>
-          <div class="caption">Jumping</div>
-        </div>
-        <div class="video-item">
-          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/skill_kungfu.mp4" type="video/mp4">
-          </video>
-          <div class="caption">Kungfu</div>
-        </div>
-        <!-- Row 3 -->
-        <div class="video-item">
-          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/skill_locomotion.mp4" type="video/mp4">
-          </video>
-          <div class="caption">Locomotion</div>
-        </div>
-        <div class="video-item">
-          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/skill_sport.mp4" type="video/mp4">
-          </video>
-          <div class="caption">Sports</div>
-        </div>
-        <div class="video-item">
-          <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/skill_stretch.mp4" type="video/mp4">
-          </video>
-          <div class="caption">Stretching</div>
-        </div>
-      </div>
-
-      <!-- Robustness Demos (4) -->
-      <h3 class="title is-3" style="margin-top: 4rem;">Robustness to Perturbation</h3>
       <div class="grid-robustness">
         <div class="video-item">
           <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/robustness_1.mp4" type="video/mp4">
+            <source src="static/videos/real_demo/put_cup_in_box.mp4" type="video/mp4">
           </video>
+          <div class="caption">Place Cup in Box</div>
         </div>
         <div class="video-item">
           <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/robustness_2.mp4" type="video/mp4">
+            <source src="static/videos/real_demo/wipe_monitor.mp4" type="video/mp4">
           </video>
+          <div class="caption">Wipe Monitor</div>
         </div>
         <div class="video-item">
           <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/robustness_3.mp4" type="video/mp4">
+            <source src="static/videos/real_demo/pick_basket.mp4" type="video/mp4">
           </video>
+          <div class="caption">Lift Basket and Place Cup</div>
         </div>
         <div class="video-item">
           <video muted loop playsinline controls preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="static/videos/robustness_5.mp4" type="video/mp4">
+            <source src="static/videos/real_demo/wipe_under_table.mp4" type="video/mp4">
           </video>
+          <div class="caption">Kneel and Wipe Under Table</div>
         </div>
       </div>
     </div>
